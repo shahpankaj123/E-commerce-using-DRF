@@ -9,6 +9,11 @@ class Productserializer(serializers.ModelSerializer):
         fields='__all__'
 
 
+class ProductLineserializer(serializers.ModelSerializer):
+    class Meta:
+        model=ProductLine
+        fields='__all__'
+
 class Brandserializer(serializers.ModelSerializer):
     class Meta:
         model=Brand
